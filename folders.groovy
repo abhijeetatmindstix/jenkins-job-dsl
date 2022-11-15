@@ -1,4 +1,4 @@
-folder('jobDSL/Project-A') {
+folder('Project-A') {
     description('Folder for project A')
 }
 folder('Project-A/A1') {
