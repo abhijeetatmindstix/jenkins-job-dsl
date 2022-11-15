@@ -8,7 +8,7 @@ pipelineJob('Project-C/C1/C1.1/pipeline_job_c1_1') {
               credentialsId('')
               name('')
               refspec('')
-              url('https://github.com/SumeetBandgar/Job_DSL.git')
+              url('https://github.com/abhijeetatmindstix/jenkins-job-dsl.git')
             }
           }
           branches {
