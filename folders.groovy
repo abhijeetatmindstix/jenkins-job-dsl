@@ -1,10 +1,10 @@
 folder('jobDSL/Project-A') {
     description('Folder for project A')
 }
-folder('jobDSL/Project-A/A1') {
+folder('Project-A/A1') {
     description('Project-A => Folder for project A1')
 }
-folder('jobDSL/Project-A/A2') {
+folder('Project-A/A2') {
     description('Project-A => Folder for project A2')
 }
 folder('Project-B') {
