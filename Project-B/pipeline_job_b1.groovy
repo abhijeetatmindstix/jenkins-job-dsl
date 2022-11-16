@@ -8,12 +8,12 @@ pipelineJob('Project-B/pipeline_job_b1') {
               credentialsId('')
               name('')
               refspec('')
-              url('https://github.com/abhijeetatmindstix/jenkins-job-dsl.git')
+              url('https://github.com/abhijeetatmindstix/pipelinejob.git')
             }
           }
           branches {
             branchSpec {
-              name('*/pipeline-b1')
+              name('*/main')
             }
           }
           browser {
@@ -24,7 +24,7 @@ pipelineJob('Project-B/pipeline_job_b1') {
           gitTool('')
         }
       }
-      scriptPath('Jenkinsfile')
+      scriptPath('b1_job.jenkins')
       lightweight(true)
     }
   }
