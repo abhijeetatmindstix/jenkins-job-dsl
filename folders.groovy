@@ -1,4 +1,4 @@
-folder('Project-A') {
+folder('jobDSL/Project-A') {
     description('Folder for project A')
 }
 folder('Project-A/A1') {
@@ -7,10 +7,10 @@ folder('Project-A/A1') {
 folder('Project-A/A2') {
     description('Project-A => Folder for project A2')
 }
-folder('Project-B') {
+folder('jobDSL/Project-B') {
     description('Folder for project B')
 }
-folder('Project-C') {
+folder('jobDSL/Project-C') {
     description('Folder for project A')
 }
 folder('Project-C/C1') {
