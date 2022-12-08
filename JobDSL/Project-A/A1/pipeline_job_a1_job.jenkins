@@ -16,6 +16,12 @@ pipelineJob('JobDSL/Project-A/A1/pipeline_job_a1_job.jenkins') {
               name('*/main')
             }
           }
+
+          triggers {
+            scm('* * * * *')
+          }
+
+
           browser {
             gitWeb {
               repoUrl('')
