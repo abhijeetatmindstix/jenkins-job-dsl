@@ -1,3 +1,4 @@
+*/
 pipelineJob('JobDSL/Project-A/A1/pipeline_job_a1_job.jenkins') {
   definition {
     cpsScmFlowDefinition {
@@ -35,3 +36,50 @@ pipelineJob('JobDSL/Project-A/A1/pipeline_job_a1_job.jenkins') {
     }
   }
 }
+/*
+
+
+
+
+pipelineJob('JobDSL/Project-A/A1/pipeline_job_a1_job.jenkins') {
+  properties([
+    disableConcurrentBuilds(abortPrevious: true)
+  ])
+  
+  definition {
+    cpsScmFlowDefinition {
+      scm {
+        gitSCM {
+          userRemoteConfigs {
+            userRemoteConfig {
+              credentialsId('')
+              name('')
+              refspec('')
+              url('https://github.com/abhijeetatmindstix/pipelinejob.git')
+            }
+          }
+          branches {
+            branchSpec {
+              name('*/main')
+            }
+          }
+
+          triggers {
+            scm('* * * * *')
+          }
+
+
+          browser {
+            gitWeb {
+              repoUrl('')
+            }
+          }
+          gitTool('')
+        }
+      }
+      scriptPath('a1_job.jenkins')
+      lightweight(true)
+    }
+  }
+}
+
