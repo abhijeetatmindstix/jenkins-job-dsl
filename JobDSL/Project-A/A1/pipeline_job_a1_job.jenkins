@@ -1,8 +1,4 @@
 pipelineJob('JobDSL/Project-A/A1/pipeline_job_a1_job.jenkins') {
-  options {
-    disableConcurrentBuilds(abortPrevious: true)
-  }
-  
   definition {
     cpsScmFlowDefinition {
       scm {
@@ -39,4 +35,3 @@ pipelineJob('JobDSL/Project-A/A1/pipeline_job_a1_job.jenkins') {
     }
   }
 }
-
