@@ -1,7 +1,7 @@
 pipelineJob('JobDSL/Project-A/A1/pipeline_job_a1_job.jenkins') {
-  properties([
+  options {
     disableConcurrentBuilds(abortPrevious: true)
-  ])
+  }
   
   definition {
     cpsScmFlowDefinition {
